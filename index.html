@@ -54,8 +54,8 @@ a.pcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;bac
 .pcard .pn{font-family:var(--mono);font-size:13px;color:var(--c);font-weight:500}
 .pcard .pt{font-family:'Fredoka';font-weight:600;font-size:1.3rem;margin:0 0 3px;letter-spacing:-.01em;color:var(--ink)}
 .pcard .pd{font-size:.94rem;color:var(--ink-soft);margin:0;max-width:62ch}
-.pcard .go{font-family:var(--mono);font-size:12px;color:var(--ink-soft);white-space:nowrap}
-a.pcard:hover .go{color:var(--c)}
+.pcard .go{font-family:'Fredoka';font-weight:600;font-size:.82rem;color:#fff;background:var(--c);padding:8px 16px;border-radius:10px;white-space:nowrap;transition:filter .15s,transform .15s}
+a.pcard:hover .go{filter:brightness(.88);transform:translateX(2px)}
 .tag{display:inline-block;font-family:var(--mono);font-size:10.5px;color:var(--c);border:1px solid var(--c);
   border-radius:6px;padding:1px 7px;margin-top:8px;opacity:.9}
 .process{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
@@ -78,6 +78,12 @@ footer{padding:46px 0 74px;text-align:center;color:var(--ink-soft);font-family:v
   <div class="iconrail"><span class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="9" y="9" width="14" height="14" rx="2"/><rect x="13" y="13" width="6" height="6" rx="1"/><path d="M13 9V5M19 9V5M13 27v-4M19 27v-4M9 13H5M9 19H5M27 13h-4M27 19h-4"/></svg></span><span class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3 16h5l2-5 4 10 4-10 4 10 2-5h5"/></svg></span><span class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 16h10M19 16h10M13 8v16M19 8v16"/></svg></span><span class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="16" cy="17" r="7"/><path d="M16 3v4M25 8l-3 3M7 8l3 3" stroke-linecap="round"/></svg></span><span class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 16c3 0 3-8 6-8s3 16 6 16 3-8 6-8 3 8 5 8"/></svg></span><span class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="5" y="5" width="22" height="22" rx="3"/><circle cx="11" cy="11" r="1.6" fill="currentColor"/><circle cx="21" cy="11" r="1.6" fill="currentColor"/><circle cx="11" cy="21" r="1.6" fill="currentColor"/><path d="M11 11h10M21 11v10M11 21h10" stroke-linecap="round"/></svg></span></div>
 </div></header>
 
+<section class="about"><div class="wrap">
+  <h2>About me</h2>
+  <p>I'm a 3rd-year Electrical Engineering student at Western University with a growing interest in embedded systems, robotics, and the connection between hardware and software.</p>
+  <p>I enjoy taking an idea from a concept to something physical — designing the system, writing the code, building the hardware, and figuring out why it doesn't work when it inevitably doesn't. Through my projects I'm developing my skills in electronics, programming, prototyping, and problem-solving while learning to approach engineering challenges more independently.</p>
+</div></section>
+
 <section class="why"><div class="wrap">
   <h2>Why I build</h2>
   <p>My interest in electronics started with a simple curiosity: I wanted to make my ideas into something physical and understand the mechanics behind them. I began experimenting with individual components, writing my own code, and figuring out how hardware and software interact.</p>
@@ -85,23 +91,23 @@ footer{padding:46px 0 74px;text-align:center;color:var(--ink-soft);font-family:v
 </div></section>
 
 <section id="projects"><div class="wrap">
-  <h2>Projects<span class="b">.</span></h2>
+  <h2>Explore my projects<span class="b">:</span></h2>
   <div class="projects">
   <a class="pcard" href="mp3-player.html" style="--c:#7458c4">
       <span class="pn">01</span>
       <span><span class="pt">MP3 Player</span><span class="pd">Learning electronics from scratch — My first independent build — wiring, soldering, and the lesson that not every bug is in your code.</span></span>
       <span class="go">view &rarr;</span></a>
-<a class="pcard" href="hand-fit-glove.html" style="--c:#159777">
+<a class="pcard" href="ai-study-bot.html" style="--c:#e0608f">
       <span class="pn">02</span>
+      <span><span class="pt">AI Desk Buddy</span><span class="pd">Embedded systems, audio, AI & interaction — A Kirby-shaped desktop companion that listens, answers with AI through a speaker, and doubles as a study tool.</span></span>
+      <span class="go">view &rarr;</span></a>
+<a class="pcard" href="hand-fit-glove.html" style="--c:#159777">
+      <span class="pn">03</span>
       <span><span class="pt">Hand Fit — Rehab Glove</span><span class="pd">Turning servo motion into hand movement — A wearable that pulls tendon lines to assist finger and hand motion, through a mechanical and power saga.</span></span>
       <span class="go">view &rarr;</span></a>
 <a class="pcard" href="sensor-rover.html" style="--c:#cf7a12">
-      <span class="pn">03</span>
-      <span><span class="pt">Sensor Rover</span><span class="pd">Integrating motors, sensors & data logging — A four-wheel rover that reads its environment, reacts, shows a live dashboard, and logs everything to SD.</span></span>
-      <span class="go">view &rarr;</span></a>
-<a class="pcard" href="ai-study-bot.html" style="--c:#e0608f">
       <span class="pn">04</span>
-      <span><span class="pt">AI Study Bot</span><span class="pd">Embedded systems, audio, AI & interaction — A Kirby-shaped desktop companion that listens, answers with AI through a speaker, and doubles as a study tool.</span></span>
+      <span><span class="pt">Sensor Rover</span><span class="pd">Integrating motors, sensors & data logging — A four-wheel rover that reads its environment, reacts, shows a live dashboard, and logs everything to SD.</span></span>
       <span class="go">view &rarr;</span></a>
 <a class="pcard" href="smartcare-monitor.html" style="--c:#1c9fc4">
       <span class="pn">05</span>
@@ -121,12 +127,6 @@ footer{padding:46px 0 74px;text-align:center;color:var(--ink-soft);font-family:v
     <span class="step">Troubleshoot</span><span class="sep">&rarr;</span>
     <span class="step">Improve</span>
   </div>
-</div></section>
-
-<section class="about"><div class="wrap">
-  <h2>About me</h2>
-  <p>I'm a 3rd-year Electrical Engineering student at Western University with a growing interest in embedded systems, robotics, and the connection between hardware and software.</p>
-  <p>I enjoy taking an idea from a concept to something physical — designing the system, writing the code, building the hardware, and figuring out why it doesn't work when it inevitably doesn't. Through my projects I'm developing my skills in electronics, programming, prototyping, and problem-solving while learning to approach engineering challenges more independently.</p>
 </div></section>
 
 <footer>Building, breaking &amp; understanding electronics · portfolio</footer>
